@@ -40,7 +40,7 @@ class FurnitureDetailVC: UIViewController, UIImagePickerControllerDelegate, UINa
     
     @IBAction func choosePhotoButtonTapped(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate?.self
+        imagePickerController.delegate = self
         
         let alertController = UIAlertController(title: "", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
         
