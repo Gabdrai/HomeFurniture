@@ -43,6 +43,17 @@ class FurnitureDetailVC: UIViewController {
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
+        
+        let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {action in
+            print("User Chose Camera")
+        })
+        alertController.addAction(cameraAction)
+        
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: {action in
+            print("User Chose Photo Library")
+        })
+        alertController.addAction(photoLibraryAction)
+        
         present(alertController, animated: true, completion: nil)
         
     }
